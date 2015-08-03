@@ -1,7 +1,7 @@
 require 'sinatra'
 
 get '/' do
-  @name = %w(Amigo Oscar Viking).sample
+  @names = %w(Dog).sample
   erb :index
 end
 

@@ -1,13 +1,15 @@
-"<div style='border: 4px dashed red'>
-    <% if @visitor %>
-      Hello, <%= @visitor %>!
+<div style='border: 10px dashed brown'>
+    <% if @visitor == 'Ken' %>
+       You are a piece of shit!
+    <% elsif @visitor %>
+       Hello, <%= @visitor %>!
     <% else %>
-      <form action="/hello">
-      My name is <%= @name %>
-      What's your name?
-      <input type="text" name="name">
-      <input type="submit" value="Submit">
-    </form>
+       <form action='/hello'>
+       My name is <%= @names %>!
+       What is your name?
+       <input type='text' name='name'>
+       <input type='submit' name='Submit'>
+       </form>
     <% end %>
-    <img src='http://localhost:4567/images/dog.png'>
-</div>"
+  <img src='/images/dog.png'>
+</div>
